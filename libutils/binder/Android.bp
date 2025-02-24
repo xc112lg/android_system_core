@@ -26,6 +26,8 @@ cc_defaults {
         "-Winvalid-offsetof",
         "-Wsequence-point",
         "-Wzero-as-null-pointer-constant",
+        "-fprofile-sample-use=toolchain/pgo-profiles/sampling/libutils.afdo",
+        "-fprofile-sample-accurate",
     ],
 
     apex_available: [

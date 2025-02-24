@@ -172,7 +172,13 @@ cc_defaults {
     apex_available: [
         "//apex_available:anyapex",
         "//apex_available:platform",
+    ],\
+
+    cflags: [
+         "-fprofile-sample-use=toolchain/pgo-profiles/sampling/libutils.afdo",
+         "-fprofile-sample-accurate",
     ],
+    
 
     afdo: true,
 }
