@@ -29,6 +29,11 @@ cc_library_headers {
         "//apex_available:anyapex",
     ],
 
+    cflags: [
+         "-fprofile-sample-use=toolchain/pgo-profiles/sampling/libutils.afdo",
+         "-fprofile-sample-accurate",
+    ],
+
     header_libs: [
         "libbase_headers",
         "libcutils_headers",
